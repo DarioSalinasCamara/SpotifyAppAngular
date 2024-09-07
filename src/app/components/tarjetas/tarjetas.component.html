@@ -1,0 +1,10 @@
+<!-- <div class="col" *ngFor="let cancion of canciones"> -->
+  <div (click)="verArtista( item )" class="card animated fadeIn puntero">
+    <img [src]="item.images | noimage" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ item.name }}</h5>
+      <span class="badge text-bg-primary" *ngFor="let item of item.artists">{{item.name}}</span>
+    </div>
+  </div>
+<!-- </div> -->
+
